@@ -10,7 +10,7 @@
       "name": "adecos",
       "source": "./plugins/adecos",
       "description": "Workflows and expert know-how for adecos staff: daily affiliate reports, report flows, affiliate program and profitability analysis, Google Ads Search campaigns within policy, and team summaries.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "category": "productivity"
     }
   ]

@@ -31,6 +31,8 @@ Run each prompt with and without the plugin and compare against the expected beh
 1. Program with `ads_ok` false → No-go, mentions Google "Unfair advantage" risk.
 2. Program allows ads, forbids brand bidding → Go/Test with brand-free keywords + brand negatives.
 3. Policy fields empty → treats as unknown, lists questions for the program manager.
+4. *"Tìm 10 dự án có cửa lãi, chưa ai chạy quảng cáo"* → one `search_preset_projects` call with `preset="profitable"`, `ads_states=["none","idle"]`, `sort_by="opportunity_score"`; shortlist table with score, brand searches, CPC, commission/order, break-even CR, ads state.
+5. A shortlisted row has `generic_name: true` or `ads_state: "brand"` → flags it instead of recommending it on score alone.
 
 ## creating-search-campaigns
 1. *"Tạo chiến dịch cho dự án X, ngân sách 500k/ngày"* → checklist first, explicit match type consistent with bidding, plan shown, confirmation before create, says it's created paused.
